@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./disc/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+<body class="bg-yellow-950 font-poppins">
+  <header>
+    <nav class="navbar fixed top-0 left-0 w-full z-[999] bg-yellow-950 p-[30px] shadow-md rounded-b-3xl laptop:rounded-b-4xl laptop:pb-[20px] laptop:pt-[20px] laptop:pl-[50px] laptop:pr-[50px] tablet::pb-[20px] tablet::pt-[20px] tablet:pl-[50px] tablet:pr-[50px]">
+      <div class="flex items-center justify-between laptop:justify-evenly">
+        <img src="./images/dev image and logo/logo.png" class="w-[50px] h-[30px] laptop:w-[70px] laptop:h-[50px]">
+        <div class="list bg-yellow-950/90 transition-transform duration-1000 translate-x-full overflow-x-hidden ease-in   absolute right-0 w-[230px] h-[100vh] p-[50px] top-[100%] rounded-tr-2xl rounded-tl-0 border-l-[1px]  border-[#F3D706] tablet:top-[100%] laptop:relative laptop:bg-transparent laptop:duration-0  laptop:flex  laptop:translate-x-0   laptop:w-auto laptop:h-auto laptop:border-l-0 laptop:border-0 laptop:p-0 tablet:w-[280px]">
+          <ul class="menu_list flex flex-col   gap-10 text-2xl text-white laptop:flex-row laptop:gap-5">
+              <li> <a href="#about" class="nav_list">About me</a></li>
+              <li><a href="#resume" class="nav_list"> Resume</a></li>
+              <li><a href="#tools" class="nav_list">Tech stack</a></li>
+              <li><a href="#project" class="nav_list">Project</a></li>
+              <li><a href="#contact" class="nav_list">Contact</a></li>
+            </ul>
+          </div>
+         <button class="bg-[#F3D706] text-yellow-950 rounded-full text-center p-[8px]  w-[150px] text-xl laptop:p-[10px] hover:scale-[0.9]"><a href="mailto:maryham4real@gmail.com">Let's work</a></button>
+         <!-- menu buttons -->
+         <button class="toggleBtn laptop:hidden">
+          <icon class="openBtn "><i class=" fa-solid fa-bars text-[#F3D706] text-2xl"></i></icon>
+          <icon class="closeBtn hidden  transition-transform duration-300 animate-rotateOnce"><i class=" fa-solid fa-xmark text-[#F3D706] text-2xl"></i></icon>
+        </button>
+     </div>
+    </nav>
+    <section class='p-[30px] laptop:p-[50px] tablet:p-[50px] mt-30'>
+      <div class="flex flex-col gap-10 laptop:justify-evenly laptop:flex-row laptop:gap-0 tablet:flex-row">
+        <div class="flex flex-col gap-3 w-full laptop:w-[40%] laptop:gap-10">
+          <h1 class="text-2xl text-white laptop:text-3xl">I'm mariam, <span class="text-[#F3D706] inline-flex overflow-hidden whitespace-nowrap animate-typing">frontend developer</span> </h1>
+          <p class="text-lg text-white laptop:text-xl">Frontend developer specializing in modern, responsive web solutions</p>
+          <p class="text-lg text-white laptop:text-xl">I build sleek, responsive, and performance-driven websites tailored to your business goals. From polished portfolios and modern landing page to scalable web application, i turn your vision into a powerful digital experience.</p>
+          <button class="projectBtn  bg-[#F3D706] p-[10px] w-[200px] rounded-full text-yellow-950 font-bold hover:scale-[0.9]">Explore my work <span class="text-2xl">&DownArrow;</span></button>
+        </div>
+        <div>
+        <img src="./images/dev image and logo/image1.png">
+      </div>
+      </div>
+    </section>
+  </header>
+  <main class="p-[30px] laptop:p-[50px] tablet:p-[50px]">
+    <!-- tools -->
+    <section class="sectionScroll flex flex-col gap-10 opacity-0 translate-y-[2rem] transition-all duration-1000 ease-in-out scroll-mt-[120px]" id="tools">
+      <h2 class="text-center text-3xl text-[#F3D706]">The stack behind my work</h2>
+      <div class="flex  justify-center flex-wrap  gap-10 laptop:justify-evenly laptop:flex-nowrap  laptop:gap-0 tablet:justify-evenly">
+        <img src="./images/stack logo/devicon--html5.svg" class="w-[70px] h-[70px] laptop:w-[100px] laptop:h-[100px] animate-upZoom">
+        <img src="./images/stack logo/devicon--css3.svg" class="w-[70px] h-[70px] laptop:w-[100px] laptop:h-[100px] animate-downZoom">
+        <img src="./images/stack logo/logos--javascript.svg" class="w-[70px] h-[70px] laptop:w-[100px] laptop:h-[100px] animate-upZoom">
+        <img src="./images/stack logo/devicon--tailwindcss.svg" class="w-[70px] h-[70px] laptop:w-[100px] laptop:h-[100px] animate-downZoom">
+      </div>
+    </section>
+    <!-- about -->
+    <section class="sectionScroll flex  flex-col gap-10 mt-10 transition-all duration-1000 ease-in-out laptop:mt-30 tablet:mt-30 scroll-mt-[170px]" id="about">
+      <div>
+        <h2 class="text-center text-3xl text-[#F3D706]">About me</h2>
+      </div>
+      <div class="flex flex-col gap-10 laptop:justify-evenly laptop:flex-row laptop:gap-0 tablet:flex-row ">
+        <div class="oddScroll transition-all duration-1000 ease-in-out">
+          <img src="./images/dev image and logo/image1.png">
+        </div>
+        <div class="evenScroll transition-all duration-1000 ease-in-out flex flex-col gap-5 w-full laptop:w-[50%] laptop:gap-10">
+          <p class="text-lg text-white">I'm thrilled you are here! i'm a Frontend developer who believes the web should be both functional and beautiful. I love bringing concepts to life through animation, interactivity, and pixel-perfect design. </p>
+          <p class="text-lg text-white">I thrive on creating smooth user experiences, ecperimenting with modern frontend stacks, and constantly learning new tools that push my creativity further when i'm not coding, you'll find me exploring design trends pr fine-tuning UI details to make something truly stand out</p>
+        </div>
+      </div>
+    </section>
+    <!-- project -->
+    <section class="sectionScroll flex  flex-col gap-10 mt-10 scroll-mt-[120px] transition-all duration-1000 ease-in-out laptop:mt-30 tablet:mt-30" id="project">
+      <div>
+         <h2 class="text-center text-3xl text-[#F3D706]">Explore my project</h2>
+      </div>
+      <div class="projectCnt flex flex-col  gap-5 justify-center laptop:flex-row laptop:gap-5 laptop:flex-wrap tablet:flex-row tablet:flex-wrap">
+        <!-- <div class="bg-[#F3D706] w-[400px] h-[300px] rounded-xl shadow-xl">
+          <img src="./images/projects/weather.png" class="rounded-t-xl ">
+          <div class="p-[20px] flex gap-5">
+              <button class="bg-amber-950 p-[10px] w-[170px] rounded-full">
+                <i class="fab fa-github"></i>
+                preview code
+              </button>
+              <button class="bg-amber-950 p-[10px] w-[170px] rounded-full">
+                <i class="fa-solid fa-link"></i>
+                preview code
+              </button>
+          </div>
+        </div> -->
+      </div>
+    </section>
+    <!-- resume -->
+    <section class="sectionScroll flex flex-col mt-10 gap-10 scroll-mt-[120px] transition-all duration-1000 ease-in-out laptop:mt-30 tablet:mt-30" id="resume">
+      <div class="flex  flex-col gap-10   items-center ">
+      <div class="">
+        <h2 class="text-center text-3xl text-[#F3D706]">Download resume</h2>
+      </div>
+      <div class="w-full laptop:w-[85%]">
+        <p class="text-lg laptop:text-xl text-white">Want to learn more about my background, skills, and professional journey? Download my latest resume to see the project i've have worked on, the technologies i specialized in, and the experience that shapes my approach to frontend development.</p>
+      </div>
+      </div>
+      <button class="bg-[#F3D706]  p-[10px] w-[200px] rounded-full text-yellow-950 font-bold ml-0 laptop:ml-[100px]  ">
+        <a href="./images/OLAYIWOLA MARIAM FRONTEND DEVELOPER RESUME.docx">
+        Download resume <i class="fa-solid fa-file"></i></button>
+        </a>
+    </section>
+    <!-- social media -->
+     <footer class="flex flex-col gap-10 mt-10 scroll-mt-[120px] laptop:mt-30 tablet:mt-30" id="contact">
+      <h2 class="text-center text-3xl text-[#F3D706]">Let's connect</h2>
+      <div class="flex justify-evenly">
+        <a href="https://x.com/Codey_sis"><i class="fa-brands fa-x-twitter cursor-auto text-[#000] text-3xl"></i></a>
+        <a href="https://www.linkedin.com/in/mariam-l-codey-sis-4bbb1031b/"><i class="fa-brands fa-linkedin text-[#0A66C2] text-3xl"></i></a>
+        <a href="https://wa.me/+2349045808495"><i class="fa-brands fa-whatsapp text-[#25D366] text-3xl"></i></a>
+        <a href="mailto:maryham4real@gmail.com"><i class="fa-solid fa-envelope text-[#EA4335] text-3xl"></i></a>
+        <a href="tel:+2349045808495"><i class="fa-solid fa-phone text-[#34B7F1] text-3xl"></i></a>
+
+      </div>
+     </footer>
+  </main>
+</body>
+</html>

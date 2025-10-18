@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme{
+    --breakpoint-tablet: 640px; /*sm*/
+    --breakpoint-laptop: 1024px; /*lg*/
+    --breakpoint-desktop: 1028px; /*xl*/
+    --breakpoint-mobile: 0px; /*default*/
+    --font-poppins: "Poppins", sans-serif;
+    --animate-upZoom: upZoom 1s ease-in-out infinite;
+    --animate-downZoom: downZoom 1s ease-in-out infinite;
+    --animate-rotateOnce: rotateOnce 1s ease-in-out;
+    --animate-typing: typing 3.5s steps(20) infinite;
+    
+}
+
+@keyframes upZoom{
+    0%{
+        transform: translateY(-15%);
+    }
+    50%{
+        transform: translateY(8%);
+    }
+    100%{
+        transform: translateY(15%);
+    }
+
+}
+@keyframes downZoom{
+    0%{
+        transform: translateY(15%);
+    }
+    50%{
+        transform: translateY(8%);
+    }
+    100%{
+        transform: translateY(-15%);
+    }
+
+}
+
+@keyframes rotateOnce {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes typing {
+    0%   { width: 0px; }
+    15%  { width: 100px; }   /* starts typing */
+    25%  { width: 150px; }
+    35%  { width: 200px; }
+    50%  { width: 320px; }  /* fully typed */
+    65%  { width: 200px; }  /* deleting starts */
+    75%  { width: 150px; }
+    85%  { width: 100px; }
+    100% { width: 0px; }   
+}
